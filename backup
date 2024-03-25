@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVA LEAGUE</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            font-family: 'Cursive', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .tile {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        h2 {
+            background-color: #add8e6;
+            color: #000;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .highlight-row td:last-child {
+            background-color: #ffeeba;
+        }
+
+        .faq-tile {
+            width: 90%;
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>TWIN HICKORY WINTER LEAGUE 2023-24</h1>
+    </div>
+
+     <div class="tile">
+        <h2>FINAL</h2>
+        <table>
+            <tr>
+                <th>Teams</th>
+                <th>Winners</th>
+            </tr>
+            <tr><td>LOGU | MADHU vs RAJ | PRAVEEN</td><td>RAJ | PRAVEEN</td></tr>
+        </table>
+    </div>
+
+     <div class="tile">
+        <h2>Playoffs Schedule</h2>
+        <table>
+            <tr>
+                <th>Teams</th>
+                <th>Winner/Score</th>
+            </tr>
+            <tr><td>SATHYA | SHINOJ vs LOGU | MADHU</td><td>Logu | Madhu(6-2, 6-3)</td></tr>
+            <tr><td>RAJ | PRAVEEN vs MIRAJ | SAJIN</td><td>Raj| Praveen (6-3, 6-4)</td></tr>
+            <tr><td>RAJ | PRAVEEN vs SATHYA | SHINOJ</td><td>RAJ | Praveen (4-6, 6-4, 10-6)</td></tr>
+        </table>
+    </div>
+
+    <div class="tile">
+        <h2>Round-Robin Schedule</h2>
+        <table>
+            <tr>
+                <th>Teams</th>
+                <th>Winner/Score</th>
+            </tr>
+            <tr><td>AYUSH | ARAVIND vs SATHYA | SHINOJ</td><td>Sathya|Shinoj (6-2, 6-3)</td></tr>
+            <tr><td>AYUSH | ARAVIND vs RAJ | PRAVEEN</td><td>Raj|Praveen (6-3, 6-0)</td></tr>
+            <tr><td>AYUSH | ARAVIND vs LOGU | MADHU</td><td>Logu|Madhu (7-5, 6-3)</td></tr>
+            <tr><td>AYUSH | ARAVIND vs MIRAJ | SAJIN</td><td>MIRAJ|SAJIN (6-3, 6-0)</td></tr>
+            <tr><td>SATHYA | SHINOJ vs RAJ | PRAVEEN</td><td>Sathya|Shinoj(6-4, 6-1)</td></tr>
+            <tr><td>SATHYA | SHINOJ vs LOGU | MADHU</td><td>Sathya|Shinoj(6-2, 7-6)</td></tr>
+            <tr><td>SATHYA | SHINOJ vs MIRAJ | SAJIN</td><td>Sathya|Shinoj(5-7, 6-3, 10-7)</td></tr>
+            <tr><td>RAJ | PRAVEEN vs LOGU | MADHU</td><td>Logu|Madhu (6-4, 6-4***)</td></tr>
+            <tr><td>RAJ | PRAVEEN vs MIRAJ | SAJIN</td><td>Miraj|Sajin (6-4, 7-6)</td></tr>
+            <tr><td>LOGU | MADHU vs MIRAJ | SAJIN</td><td>Logu|Madhu (6-4, 6-4)</td></tr>
+        </table>
+    </div>
+
+    <div class="tile">
+        <h2>Round-Robin Points</h2>
+        <table>
+            <tr>
+                <th>Team</th>
+                <th>Points</th>
+            </tr>
+            <tr><td>SATHYA | SHINOJ</td><td>8</td></tr>
+            <tr><td>LOGU | MADHU</td><td>6</td></tr>
+            <tr><td>MIRAJ | SAJIN</td><td>4</td></tr>
+            <tr><td>RAJ | PRAVEEN</td><td>4</td></tr>
+            <tr><td>AYUSH | ARAVIND</td><td>0</td></tr>
+        </table>
+    </div>
+
+    <div class="tile">
+        <h2>Team Information</h2>
+        <table>
+            <tr>
+                <th>Team Name</th>
+                <th>Team Members</th>
+            </tr>
+            <tr><td>Team A</td><td>AYUSH | ARAVIND</td></tr>
+            <tr><td>Team B</td><td>SATHYA | SHINOJ</td></tr>
+            <tr><td>Team C</td><td>RAJ | PRAVEEN</td></tr>
+            <tr><td>Team D</td><td>LOGU | MADHU</td></tr>
+            <tr><td>Team E</td><td>MIRAJ | SAJIN</td></tr>
+        </table>
+    </div>
+
+    <div class="tile faq-tile">
+        <h2>FAQ</h2>
+        <table>
+            <tr><td>Final</td><td>Top 2 teams after playoffs</td></tr>
+            <tr><td>Registration Fees</td><td>$20 Per Team</td></tr>
+            <tr><td>Rating Cap</td><td>7.5</td></tr>
+        </table>
+    </div>
+
+</body>
+</html>
