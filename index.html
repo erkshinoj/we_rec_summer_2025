@@ -6,58 +6,106 @@
   <title>Westend Rec. Summer League 2025</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
+    /* Reset and base styles */
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('https://images.unsplash.com/photo-1561736778-92e52a7769ef?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
-      background-size: cover;
       color: #fff;
-      backdrop-filter: brightness(0.9) saturate(1.2);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 10px;
+      background: url('https://images.unsplash.com/photo-1509228627152-72ae9ae6848c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
+    /* Overlay for background tint */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 50, 0.5);
+      z-index: 0;
+    }
+
+    /* Decorative elements */
+    .decorative {
+      position: absolute;
+      z-index: 1;
+      opacity: 0.8;
+    }
+
+    .tennis-ball {
+      width: 50px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .racket {
+      width: 60px;
+      animation: rotate 10s linear infinite;
+    }
+
+    .margarita {
+      width: 40px;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Header */
     .header {
       text-align: center;
       padding: 30px 10px;
-      background-color: rgba(0, 47, 108, 0.85);
-      border-bottom: 5px solid #ffeb3b;
-      width: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-bottom: 4px solid #FFF44F;
+      position: relative;
+      z-index: 2;
     }
 
     .header h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2.7rem;
-      margin: 0;
-      color: #ffeb3b;
-      text-shadow: 2px 2px 10px #0033a0;
+      font-size: 2.5rem;
+      color: #00BFFF;
+      text-shadow: 2px 2px 10px #FFF44F;
     }
 
+    /* Content tiles */
     .tile {
-      background: rgba(0, 0, 50, 0.65);
-      border-radius: 15px;
-      box-shadow: 0 6px 24px rgba(0,0,0,0.3);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       margin: 20px auto;
-      width: 100%;
+      width: 90%;
       max-width: 800px;
       overflow: hidden;
+      position: relative;
+      z-index: 2;
     }
 
     h2 {
       margin: 0;
       padding: 15px;
-      font-size: 1.5rem;
-      background-color: #ffeb3b;
-      color: #002b5c;
+      font-size: 1.4rem;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
       text-align: center;
     }
 
@@ -74,7 +122,7 @@
     }
 
     th {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0,0,0,0.5);
     }
 
     tr:hover {
@@ -83,7 +131,7 @@
     }
 
     .highlight-row td:last-child {
-      background-color: #fff176;
+      background-color: #ffeeba;
       color: #000;
     }
 
@@ -102,10 +150,17 @@
   </style>
 </head>
 <body>
+  <!-- Decorative Elements -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Tennis_ball.svg" class="decorative tennis-ball" style="top: 50px; left: 20px;" alt="Tennis Ball">
+  <img src="https://www.svgrepo.com/show/154692/tennis-racket-and-ball.svg" class="decorative racket" style="top: 100px; right: 30px;" alt="Tennis Racket">
+  <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="decorative margarita" style="bottom: 50px; left: 40px;" alt="Margarita Glass">
+
+  <!-- Header -->
   <div class="header">
     <h1>Westend Rec. Summer League 2025</h1>
   </div>
 
+  <!-- Final -->
   <div class="tile">
     <h2>🏆 FINAL</h2>
     <table>
@@ -114,6 +169,7 @@
     </table>
   </div>
 
+  <!-- Playoff Schedule -->
   <div class="tile">
     <h2>📅 PLAYOFF SCHEDULE</h2>
     <table>
@@ -123,6 +179,7 @@
     </table>
   </div>
 
+  <!-- Round Robin Standings -->
   <div class="tile">
     <h2>📊 ROUND ROBIN STANDINGS</h2>
     <table>
@@ -137,6 +194,7 @@
     </table>
   </div>
 
+  <!-- Round Robin Matches -->
   <div class="tile">
     <h2>🎾 ROUND ROBIN MATCHES</h2>
     <table>
@@ -145,6 +203,7 @@
     </table>
   </div>
 
+  <!-- League Participants -->
   <div class="tile">
     <h2>👥 LEAGUE PARTICIPANTS</h2>
     <table>
@@ -159,6 +218,7 @@
     </table>
   </div>
 
+  <!-- League Rules -->
   <div class="tile">
     <h2>📜 LEAGUE RULES</h2>
     <table>
@@ -168,12 +228,6 @@
       <tr><td>League Start Date</td><td>18th MAY 2025 or Earlier</td></tr>
       <tr><td>League End Date (Weather Permitting)</td><td>JUNE 28 2025</td></tr>
       <tr><td>Winning Points</td><td>2 Points awarded per Round Robin win</td></tr>
-      <tr><td>Match Format</td><td>2 Sets + 10-Point Tiebreaker</td></tr>
-      <tr><td>Playoff Format</td><td>IPL-style Knockout Playoffs</td></tr>
-      <tr><td>Playoff Rules</td><td>
-        Top 4 teams advance. Tiebreakers in order: Head-to-head > Fewest sets lost > Fewest games lost > Tiebreaker match.
-      </td></tr>
-    </table>
-  </div>
-</body>
-</html>
+      <tr><td>Match Format</td><td>2 Sets + 10-
+::contentReference[oaicite:0]{index=0}
+ 
